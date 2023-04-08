@@ -33,6 +33,7 @@ body{
 
 section{
     color: white;
+    position: relative;
 }
 
 .row::after {
@@ -50,19 +51,23 @@ section{
 h1, h2{
     font-size: 3rem;
     font-family: 'Big Shoulders Display';
+    font-weight: 700;
 }
 
 p{
     font-family: 'Lexend Deca';
+    font-weight: 400;
 }
 
 button{
     background-color: white;
     border-radius: 25px;
-    padding: 1rem;
+    padding: 0.8rem;
     font-family: 'Lexend Deca';
-    border-style: none;
-    width: 50%;
+    border: 1px solid white;
+    width: 80%;
+    position: absolute;
+    bottom: 20px;
 }
 
 .sed{
@@ -86,6 +91,8 @@ button{
 .lux button{
     color: hsl(179, 100%, 13%);
 }
+
+
 @media only screen and (max-width: 768px) {
     [class*="col-"] {
         float: left;
