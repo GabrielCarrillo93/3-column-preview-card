@@ -1,0 +1,104 @@
+html{
+    font-size: 15px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 50px;
+    border: 1px solid red;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    justify-items: center;
+}
+
+section{
+    color: white;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+}
+
+h1, h2{
+    font-size: 3rem;
+    font-family: 'Big Shoulders Display';
+}
+
+p{
+    font-family: 'Lexend Deca';
+}
+
+button{
+    background-color: white;
+    border-radius: 25px;
+    padding: 1rem;
+    font-family: 'Lexend Deca';
+    border-style: none;
+    width: 50%;
+}
+
+.sed{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.sed button{
+    color:hsl(31, 77%, 52%)
+}
+.suv{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suv button{
+    color:hsl(184, 100%, 22%)
+}
+
+.lux{
+    background-color: hsl(179, 100%, 13%);
+}
+.lux button{
+    color: hsl(179, 100%, 13%);
+}
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        float: left;
+        padding: 50px;
+        border: 1px solid red;
+        width: 100%;
+    }
+
+    .row{
+        display: grid;
+        padding: 0;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
